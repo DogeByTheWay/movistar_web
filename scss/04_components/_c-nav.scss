@@ -1,0 +1,34 @@
+.c-nav {
+    display: none;
+    gap:getGap(2) getGap(2);
+    align-items: center;
+    font-family: getFontFamily('principal');
+    &__item {
+        margin: getMargin(3);
+        &--derecha {
+            margin-left: auto;
+        }
+    }
+    &__hamburguer {
+        display: block;
+    }
+}
+
+@media(min-width:getMedia("tablet")){
+    .c-nav{
+        display: flex;
+        gap:getGap(4);
+    }
+    .c-nav__hamburguer{
+       display: none;
+    }
+}
+@media(min-width:getMedia("desktop")){
+    .c-nav{
+        display: flex;
+        gap:getGap(8);
+    }
+    .c-nav__hamburguer{
+        display: none;
+    }
+}

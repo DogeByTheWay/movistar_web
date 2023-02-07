@@ -1,0 +1,9 @@
+.c-button {
+    padding: getPadding(3) getPadding(6);
+    border:1px solid getColors("blanco",0);
+    @include border-radius(2);
+    color:white;
+    &--primario{
+        background-color: getColors("alternativo",6);
+    }
+}

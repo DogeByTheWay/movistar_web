@@ -1,0 +1,36 @@
+.c-banner{
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    font-family: getFontFamily("principal");
+
+    &__titulo{
+        text-align: center;
+        color: getColors("blanco",0);
+        font-size: getFontSize('4xl');
+    }
+
+    &__contenido{
+        text-align: center;
+        color: getColors("blanco",0);
+    }
+
+    &--principal{
+        background-image: url("../assets/img/megabanner_home.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media(min-width:getMedia("tablet")){
+    .c-banner__titulo{
+        font-size: getFontSize('7xl');
+    }
+}
+@media(min-width:getMedia("desktop")){
+    .c-banner__titulo{
+        font-size: getFontSize('10xl');
+    }
+}
